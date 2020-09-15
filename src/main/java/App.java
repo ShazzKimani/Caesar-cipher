@@ -9,15 +9,15 @@ public class App {
         Scanner sc = new Scanner(System.in);
         boolean programRunning = true;
         while(programRunning) {
-            System.out.println("Welcome to Ceaser Cipher\n" +
+            System.out.println("Welcome to Caeser Cipher\n" +
                     "------------------------------------------------\n" +
                     "Choose:\n 1 for Encryption\n 2 for Decryption\n # to Exit");
             String selection = sc.nextLine();
             if (selection.equals("1")) {
                 System.out.println("-----------------------------------------------");
-                System.out.println("Enter the text to encrypt:");
+                System.out.println("Enter the text you wish to encrypt:");
                 String text = sc.nextLine();
-                System.out.println("Enter the encryption Key:");
+                System.out.println("Enter the shift  Key:");
                 String stringKey = sc.nextLine();
                 int intKey = Integer.parseInt(stringKey);
                 System.out.println("-----------------------------------------------");
@@ -26,9 +26,9 @@ public class App {
                 System.out.println("-----------------------------------------------");
             } else if (selection.equals("2")) {
                 System.out.println("-----------------------------------------------");
-                System.out.println("Enter the text to decrypt:");
+                System.out.println("Enter the text you wish to decrypt:");
                 String text = sc.nextLine();
-                System.out.println("Enter the decryption Key:");
+                System.out.println("Enter the shift Key:");
                 String stringKey =sc.nextLine();
                 int intKey = Integer.parseInt(stringKey);
                 System.out.println("-----------------------------------------------");
@@ -40,7 +40,7 @@ public class App {
                 programRunning = false;
                 System.exit(0);
             } else {
-                System.out.println("Invalid input!!!!");
+                System.out.println("Error, Invalid input!!!!");
             }
         }
 
